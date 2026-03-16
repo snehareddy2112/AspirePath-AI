@@ -258,7 +258,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
                 <span>↵ Select</span>
                 <span>Esc Close</span>
               </div>
-              <span>Powered by DevElevate</span>
+              <span>Powered by AspirePath AI</span>
             </div>
           </div>
         </div>

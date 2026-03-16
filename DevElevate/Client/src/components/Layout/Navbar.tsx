@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
                   className={`text-xl font-bold ${state.darkMode ? "text-white" : "text-gray-900"
                     }`}
                 >
-                  DevElevate
+                  AspirePath AI
                 </span>
               </Link>
             </div>

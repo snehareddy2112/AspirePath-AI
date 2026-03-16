@@ -32,7 +32,7 @@ export default function DocumentationPage() {
           // Header text colors for contrast
           className="mb-4 text-4xl font-extrabold tracking-tight text-indigo-800 sm:text-5xl dark:text-indigo-200"
         >
-          DevElevate Documentation
+          AspirePath AI Documentation
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -221,11 +221,11 @@ export default function DocumentationPage() {
           </h2>
         </div>
         <p className="mb-4 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-          DevElevate follows a modular monorepo structure with separate frontend
+          AspirePath AI follows a modular monorepo structure with separate frontend
           and backend directories. Below is the combined architecture overview.
         </p>
         <pre className={codeBlockClass}>
-          {`DevElevate/
+          {`AspirePath AI/
 ├── README.md                  # Main project documentation
 ├── client/                    # Frontend (React + TypeScript)
 │   ├── public/                # Static assets
@@ -260,7 +260,7 @@ export default function DocumentationPage() {
         </pre>
       </motion.section>
 
-      {/* Quick Start Section */}
+      {/* Quick Start Section
       <motion.section
         className="max-w-6xl p-6 mx-auto border shadow-lg rounded-2xl backdrop-blur-sm bg-white/80 dark:bg-gray-800/80 sm:p-8 border-gray-200/50 dark:border-gray-700/50"
         initial="hidden"
@@ -295,7 +295,7 @@ npm run dev   # Runs on http://localhost:5173`}
             auth flows first.
           </p>
         </div>
-      </motion.section>
+      </motion.section>*/}
 
       {/* Deployment Section */}
       <motion.section
@@ -322,7 +322,7 @@ npm run dev   # Runs on http://localhost:5173`}
         </ul>
       </motion.section>
 
-      {/* License Section */}
+      {/* License Section 
       <motion.section
         className="max-w-6xl p-6 mx-auto border shadow-lg rounded-2xl backdrop-blur-sm bg-white/80 dark:bg-gray-800/80 sm:p-8 border-gray-200/50 dark:border-gray-700/50"
         initial="hidden"
@@ -341,7 +341,7 @@ npm run dev   # Runs on http://localhost:5173`}
         </p>
       </motion.section>
 
-      {/* Contributing Section */}
+      {/* Contributing Section 
       <motion.section
         className="max-w-6xl p-6 mx-auto border shadow-lg rounded-2xl backdrop-blur-sm bg-white/80 dark:bg-gray-800/80 sm:p-8 border-gray-200/50 dark:border-gray-700/50"
         initial="hidden"
@@ -354,7 +354,7 @@ npm run dev   # Runs on http://localhost:5173`}
           <h2 className="text-2xl font-bold sm:text-3xl">Contributing</h2>
         </div>
         <p className="mb-4 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-          DevElevate welcomes contributions via GSSoC 2025! Follow strict
+          AspirePath AI welcomes contributions via GSSoC 2025! Follow strict
           guidelines: No changes to core backend/routes/auth. Always pull latest
           main, add PR comments with files edited/testing steps/screenshots.
         </p>
@@ -396,15 +396,16 @@ npm run dev   # Runs on http://localhost:5173`}
           existing routes, or unrelated code. Violations lead to PR
           rejection/removal.
         </p>
-      </motion.section>
+      </motion.section> 
+      */}
 
       {/* Footer with improved contrast */}
       <footer className="pt-6 pb-8 mt-12 text-center text-indigo-600 border-t dark:text-indigo-400 border-indigo-200/50 dark:border-gray-700/50">
         <p className="mb-2 text-base font-medium text-indigo-800 dark:text-indigo-200">
-          Built with <span className="text-red-500">❤️</span> for GSSoC 2025 by
-          Abhisek Panda & Team.
+          Built with <span className="text-red-500">❤️</span>  by
+          AspirePath AI Team.
         </p>
-        <p className="text-sm text-indigo-600 dark:text-indigo-400">
+        {/*<p className="text-sm text-indigo-600 dark:text-indigo-400">
           Explore Full Docs:{" "}
           <a
             href="https://docs.google.com/document/d/1oHgo5GmPDQu6eV9ND3VrYcpi0Dwvb-wWZi-lMgjFAH8/edit?usp=sharing"
@@ -416,15 +417,15 @@ npm run dev   # Runs on http://localhost:5173`}
           </a>{" "}
           | Live:{" "}
           <a
-            href="https://develevate-ai.vercel.app"
+            href="https://AspirePath AI-ai.vercel.app"
             className="font-semibold text-indigo-800 underline transition-colors dark:text-indigo-200 hover:text-indigo-700 dark:hover:text-indigo-300"
             target="_blank"
             rel="noopener noreferrer"
           >
             Demo
           </a>
-        </p>
-      </footer>
+        </p> */}
+      </footer> 
 
       {/* Return Button */}
       <div className="flex justify-center mt-10">

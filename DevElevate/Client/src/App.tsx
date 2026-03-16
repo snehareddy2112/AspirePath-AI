@@ -59,7 +59,7 @@ import Disclaimer from "./pages/Landing/components/Disclaimer";
 import ApiDocs from "./pages/Landing/components/ApiDocs";
 import DocumentationPage from "./pages/Landing/components/DocumentationPage";
 import ContributorGuide from "./pages/Leaderboard/ContributorGuide";
-import CreatorPage from "./pages/Landing/components/CreatorPage";
+//import CreatorPage from "./pages/Landing/components/CreatorPage";
 import JavaScriptFundamentals from "./pages/Notes/JavaScriptFundamentals/JavaScriptFundamentals.jsx";
 import PythonNotes from "./pages/Notes/PythonBasics/PythonNotes.jsx";
 import GitNotes from "./pages/Notes/GitVersionControl/GitNotes.jsx";
@@ -89,7 +89,7 @@ const AppContent = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
-        <Route path="/about-creator" element={<CreatorPage />} />
+      
         <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/api-docs" element={<ApiDocs />} />
         <Route path="/documentation" element={<DocumentationPage />} />
@@ -269,7 +269,7 @@ function App() {
             {showSplash ? (
               <SplashScreen
                 fullPage
-                title="DevElevate"
+                title="AspirePath AI"
                 subtitle="Preparing awesomeness..."
               />
             ) : (

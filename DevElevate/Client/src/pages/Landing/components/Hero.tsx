@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
-  const [contributors, setContributors] = useState<any[]>([]);
+  //const [contributors, setContributors] = useState<any[]>([]);
   const [showVideo, setShowVideo] = useState(false);
 
   // Observer animation
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
   }, []);
 
   // Fetch contributors (Top 5)
-  useEffect(() => {
+  /*useEffect(() => {
     const fetchContributors = async () => {
       try {
         const res = await fetch(
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
 
     fetchContributors();
   }, []);
-
+*/
   return (
     <section
       ref={heroRef}
@@ -143,7 +143,7 @@ const Hero: React.FC = () => {
             </div>
           )}
 
-          {/* Trust Indicators */}
+          {/* Trust Indicators 
           <div className="flex items-center space-x-4 text-sm text-gray-500">
             <div className="flex items-center space-x-1">
               <div className="flex -space-x-2">
@@ -174,8 +174,8 @@ const Hero: React.FC = () => {
               </div>
               <span>Trusted by developers worldwide</span>
             </div>
-          </div>
-        </div>
+          </div>*/}
+        </div> 
 
         {/* Right Content */}
         <div className="relative flex items-center justify-center mt-10 lg:mt-0">
@@ -196,7 +196,7 @@ const Hero: React.FC = () => {
           </div>
           {/* 🔥 New floating snippets */}
           <div className="absolute hidden p-3 delay-700 border rounded-lg md:block top-10 right-1/4 bg-black/50 backdrop-blur-sm border-pink-500/20 animate-float">
-            <code className="text-xs text-pink-400">{"const dev = Elevate();"}</code>
+            <code className="text-xs text-pink-400">{"const PJ-B-07 = AspirePath AI();"}</code>
           </div>
 
           <div className="absolute hidden p-3 delay-1000 border rounded-lg md:block bottom-10 left-1/4 bg-black/50 backdrop-blur-sm border-yellow-500/20 animate-float">

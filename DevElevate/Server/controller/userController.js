@@ -291,16 +291,16 @@ export const googleUser = async (req, res) => {
       }
 
       // ✅ Check if this user should NOT be admin
-      // Only officialdevelevate@gmail.com should be admin
-      if (user.role === "admin" && email !== "officialdevelevate@gmail.com") {
+      // Only snehareddyaelijerla@gmail.com should be admin
+      if (user.role === "admin" && email !== "snehareddyaelijerla@gmail.com") {
         user.role = "user";
         await user.save();
       }
     } else {
       // ✅ CRITICAL: Always create new users with 'user' role
-      // Only make admin if email is officialdevelevate@gmail.com
+      // Only make admin if email is snehareddyaelijerla@gmail.com
       const userRole =
-        email === "officialdevelevate@gmail.com" ? "admin" : "user";
+        email === "snehareddyya@gmail.com" ? "admin" : "user";
 
       user = new User({
         name,

@@ -36,7 +36,7 @@ const Disclaimer: React.FC = () => {
           </p>
         </div>
 
-        {/* Creator Information */}
+        {/* Creator Information 
         <div className="p-8 mb-8 border border-gray-700 shadow-sm bg-gray-800/70 rounded-xl backdrop-blur-sm">
           <div className="flex items-center mb-6 space-x-3">
             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-900/30">
@@ -106,7 +106,7 @@ const Disclaimer: React.FC = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Important Note */}
         <div className="p-8 mb-8 border border-yellow-800 bg-yellow-900/20 rounded-xl">
@@ -117,8 +117,8 @@ const Disclaimer: React.FC = () => {
                 🚧 Important Note
               </h3>
               <p className="text-lg leading-relaxed text-gray-300">
-                This website has been developed as a{" "}
-                <strong>personal learning project</strong> to sharpen my skills
+                This website has been developed as part of our academic{" "}
+                <strong>MAJOR PROJECT</strong> specifically selected to showcase our skills
                 in full-stack web development — specifically using the{" "}
                 <strong>MERN stack</strong>:
               </p>
@@ -163,8 +163,8 @@ const Disclaimer: React.FC = () => {
             🎯 Purpose of this Project
           </h3>
           <p className="mb-4">
-            This is <strong>not an official educational platform</strong>. I
-            built this project as a part of my journey into professional web
+            This is <strong>not an official educational platform</strong>. We
+            built this project as a part of academic project in  web
             development. The goal was to:
           </p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -212,7 +212,7 @@ const Disclaimer: React.FC = () => {
               their partners, sponsors, or media outlets.
             </p>
             <p>
-              It is a <strong>fan-made educational platform</strong> and a{" "}
+              It is a <strong>educational platform</strong> and a{" "}
               <strong>portfolio piece</strong> for skill demonstration only.
             </p>
             <p>
@@ -223,7 +223,7 @@ const Disclaimer: React.FC = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
+        {/* Call to Action 
         <div className="p-8 mb-8 text-center text-gray-300 bg-gradient-to-r from-blue-900 to-purple-900 rounded-xl">
           <h3 className="mb-4 text-xl font-bold text-white">
             🧠 Calling Developers, Learners & Recruiters!
@@ -248,18 +248,18 @@ const Disclaimer: React.FC = () => {
             Let's connect on LinkedIn or check out more of my work on GitHub.
             I'm always up for feedback, collaboration, or just tech talk 🤝✨
           </p>
-        </div>
+        </div> */}
 
         {/* Final Message */}
         <div className="p-8 text-center text-gray-300 border border-gray-700 shadow-sm bg-gray-800/70 rounded-xl">
-          <div className="flex items-center justify-center mb-4 space-x-2">
+          {/* <div className="flex items-center justify-center mb-4 space-x-2">
             <Coffee className="w-6 h-6 text-blue-500" />
             <Code className="w-6 h-6 text-green-500" />
             <Heart className="w-6 h-6 text-red-500" />
           </div>
           <h3 className="mb-4 text-xl font-bold text-white">
             🧪 This project = Code + Coffee + Curiosity ☕💡💻
-          </h3>
+          </h3> */}
           <p>
             Thanks for visiting this experimental build! Hope it inspires you to
             build something of your own 🚀

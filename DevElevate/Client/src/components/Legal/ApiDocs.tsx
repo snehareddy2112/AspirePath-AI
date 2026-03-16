@@ -213,7 +213,7 @@ const ApiDocs = () => {
                     API Documentation
                 </motion.h1>
                 <p className="mx-auto max-w-3xl text-base leading-relaxed text-gray-600 dark:text-gray-400 sm:text-lg">
-                    Comprehensive RESTful APIs for authentication, user management, community features, ATS scanning, admin controls, and notifications in the DevElevate platform.
+                    Comprehensive RESTful APIs for authentication, user management, community features, ATS scanning, admin controls, and notifications in the AspirePath AI platform.
                 </p>
             </section>
 

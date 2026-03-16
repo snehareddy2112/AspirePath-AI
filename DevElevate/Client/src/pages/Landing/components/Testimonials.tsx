@@ -58,7 +58,7 @@ const Testimonials = () => {
       image:
         'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400',
       content:
-        'DevElevate transformed my career. The AI study buddy helped me master DSA, and I landed my dream job at Google within 6 months!',
+        'AspirePath AI transformed my career. The AI study buddy helped me master DSA, and I landed my dream job at Google within 6 months!',
       rating: 5,
     },
     {
@@ -67,7 +67,7 @@ const Testimonials = () => {
       image:
         'https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=400',
       content:
-        'The personalized learning paths and mock interviews were game-changers. DevElevate made complex concepts accessible and fun.',
+        'The personalized learning paths and mock interviews were game-changers. AspirePath AI made complex concepts accessible and fun.',
       rating: 5,
     },
     {
@@ -85,7 +85,7 @@ const Testimonials = () => {
       image:
         'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400',
       content:
-        'DevElevate’s system design modules and mentorship sessions were key to cracking Amazon’s rigorous interview process.',
+        'AspirePath AI’s system design modules and mentorship sessions were key to cracking Amazon’s rigorous interview process.',
       rating: 4,
     },
     {
@@ -230,7 +230,7 @@ const Testimonials = () => {
             </span>
           </h2>
           <p className="max-w-2xl mx-auto text-xl text-gray-400">
-            Discover how <span className="font-semibold text-blue-400">DevElevate</span> empowered developers to achieve their dream careers
+            Discover how <span className="font-semibold text-blue-400">AspirePath AI</span> empowered developers to achieve their dream careers
           </p>
         </motion.div>
 
@@ -319,7 +319,7 @@ const Testimonials = () => {
             <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
               Join the{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500">
-                DevElevate
+                AspirePath AI
               </span>{' '}
               Revolution
             </h2>
@@ -339,7 +339,7 @@ const Testimonials = () => {
             </motion.a>
             <p className="mt-6 text-sm text-gray-400">
               Let’s build, learn & grow — together with{' '}
-              <span className="font-semibold text-blue-400">DevElevate</span>.
+              <span className="font-semibold text-blue-400">AspirePath AI</span>.
             </p>
           </motion.div>
         </div>
@@ -384,7 +384,7 @@ const Testimonials = () => {
                     Share Your Experience
                   </h2>
                   <p className="text-gray-300">
-                    Help others by sharing how DevElevate helped you in your journey
+                    Help others by sharing how AspirePath AI helped you in your journey
                   </p>
                 </div>
 
@@ -473,7 +473,7 @@ const Testimonials = () => {
                   </div>
                   <div>
                     <label htmlFor="likedMost" className="block mb-2 text-sm font-medium text-gray-200">
-                      What did you like most about DevElevate? *
+                      What did you like most about AspirePath AI? *
                     </label>
                     <textarea
                       id="likedMost"
@@ -488,7 +488,7 @@ const Testimonials = () => {
                   </div>
                   <div>
                     <label htmlFor="howHelped" className="block mb-2 text-sm font-medium text-gray-200">
-                      How did DevElevate help you? *
+                      How did AspirePath AI help you? *
                     </label>
                     <textarea
                       id="howHelped"
@@ -498,7 +498,7 @@ const Testimonials = () => {
                       required
                       rows={3}
                       className="w-full px-4 py-3 text-gray-100 placeholder-gray-400 transition-all border rounded-lg border-gray-600/30 bg-gray-800/40 backdrop-blur-md focus:ring-2 focus:ring-blue-400/50 focus:border-blue-400/50 resize-vertical custom-scrollbar"
-                      placeholder="Share how DevElevate improved your learning journey..."
+                      placeholder="Share how AspirePath AI improved your learning journey..."
                     />
                   </div>
                   <div>
@@ -526,7 +526,7 @@ const Testimonials = () => {
                       className="w-4 h-4 text-blue-400 rounded bg-gray-800/60 border-gray-600/50 focus:ring-blue-400 focus:ring-2 backdrop-blur-sm"
                     />
                     <label htmlFor="canShow" className="text-sm text-gray-200">
-                      I allow DevElevate to display this testimonial publicly
+                      I allow AspirePath AI to display this testimonial publicly
                     </label>
                   </div>
                   {formData.canShow && (

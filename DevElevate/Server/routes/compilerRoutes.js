@@ -4,6 +4,42 @@ import axios from "axios";
 const router = express.Router();
 
 router.post("/", async (req, res) => {
+  try {
+    const { source_code, language, stdin } = req.body;
+
+    const response = await axios.post("https://emkc.org/api/v2/piston/execute", {
+      language: language,        // e.g. "python", "java", "cpp"
+      version: "*",              // auto-select latest version
+      files: [
+        {
+          content: source_code
+        }
+      ],
+      stdin: stdin || ""
+    });
+
+    const result = response.data.run;
+
+    return res.json({
+      stdout: result.stdout,
+      stderr: result.stderr,
+      output: result.output,
+      code: result.code
+    });
+
+  } catch (error) {
+    console.error("Piston Error:", error.message);
+    return res.status(500).json({ error: "Code execution failed" });
+  }
+});
+
+export default router;
+/*import express from "express";
+import axios from "axios";
+
+const router = express.Router();
+
+router.post("/", async (req, res) => {
   let { source_code, language_id, stdin, is_base64 } = req.body;
   if (is_base64) {
     source_code = Buffer.from(source_code, "base64").toString("utf-8");
@@ -32,4 +68,4 @@ router.post("/", async (req, res) => {
   }
 });
 
-export default router;
+export default router;*/

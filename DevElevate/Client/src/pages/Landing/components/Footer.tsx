@@ -104,11 +104,11 @@ const HomePage = () => {
   const legalLinks = [
     { name: "Privacy Policy", path: "/privacy-policy" },
     { name: "Terms of Service", path: "/terms-of-service" },
-    { name: "About Creator", path: "/about-creator" },
+    //{ name: "About Creator", path: "/about-creator" },
     { name: "Disclaimer", path: "/disclaimer" },
     { name: "API Docs", path: "/api-docs" },
     { name: "Documentation", path: "/documentation" },
-    { name: "Contributor Guide", path: "/contributor-guide" },
+    //{ name: "Contributor Guide", path: "/contributor-guide" },
   ];
 
   // Footer Tech Stack
@@ -147,7 +147,7 @@ const HomePage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                    DevElevate
+                    AspirePath AI
                   </h3>
                   <p className="text-xs text-gray-500">Smart Learning Hub</p>
                 </div>
@@ -155,12 +155,12 @@ const HomePage = () => {
               <p className="mb-6 leading-relaxed text-gray-400">
                 Empowering developers worldwide with AI-powered learning, personalized guidance, and comprehensive career support.
               </p>
-              <div className="flex space-x-4">
+              {/* <div className="flex space-x-4">
                 {[
                   { icon: Github, href: "https://github.com/abhisek2004/Dev-Elevate" },
                   { icon: FaBriefcase, href: "https://abhisekpanda072.vercel.app/" },
                   { icon: Linkedin, href: "https://www.linkedin.com/in/abhisekpanda2004/" },
-                  { icon: Mail, href: "mailto:officialdevelevate@gmail.com" },
+                  { icon: Mail, href: "mailto:snehareddyaelijerla@gmail.com" },
                 ].map((social, index) => (
                   <a
                     key={index}
@@ -172,7 +172,7 @@ const HomePage = () => {
                     <social.icon className="w-4 h-4 text-gray-400" />
                   </a>
                 ))}
-              </div>
+              </div> */}
             </div>
             <div className="col-span-1">
               <h4 className="mb-4 font-semibold text-white">Legal</h4>
@@ -209,7 +209,7 @@ const HomePage = () => {
                 Subscribe to our newsletter
               </h4>
               <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
-                Get the latest updates, learning tips, and community news from DevElevate.
+                Get the latest updates, learning tips, and community news from AspirePath AI.
               </p>
               <form onSubmit={handleSubmit} className="flex flex-col gap-2 sm:flex-row">
                 <input
@@ -235,15 +235,15 @@ const HomePage = () => {
           </div>
           <div className="flex flex-col items-center justify-center gap-2 pt-8 mt-12 text-center border-t sm:flex-row border-white/10">
             <div className="text-sm text-yellow-400 flex flex-wrap items-center justify-center gap-1 sm:gap-2 transition duration-300 hover:text-pink-400 hover:drop-shadow-[0_0_12px_rgba(255,20,147,0.9)]">
-              © 2025 <span className="font-semibold">DevElevate</span>. All rights reserved. | Made with ❤️ by
-              <a
+              © 2025 <span className="font-semibold">AspirePath AI</span>. All rights reserved. | Made with ❤️ by
+              {/*<a
                 href="https://www.linkedin.com/in/abhisekpanda2004/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-1 font-semibold text-yellow-400 transition duration-300 hover:text-pink-400"
               >
-                Abhisek Panda
-              </a>
+                Team AspirePath AI
+              </a>*/} Team AspirePath AI
             </div>
           </div>
         </div>

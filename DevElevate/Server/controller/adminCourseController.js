@@ -1,5 +1,6 @@
 import AdminCourse from "../model/AdminCourse.js";
 import axios from 'axios';
+//dotenv.config();
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const YOUTUBE_API_BASE_URL = 'https://www.googleapis.com/youtube/v3';

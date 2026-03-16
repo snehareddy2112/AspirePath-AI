@@ -63,7 +63,7 @@ const HelpCenter: React.FC = () => {
           hesitate to contact our support team.
         </p>
         <a
-          href="mailto:officialdevelevate@gmail.com?subject=Support%20Request&body=Hello%20DevElevate%20Support%2C%0D%0A%0D%0AI%20need%20help%20with..."
+          href="mailto:snehareddyaelijerla@gmail.com?subject=Support%20Request&body=Hello%20AspirePath%20AI%20Support%2C%0D%0A%0D%0AI%20need%20help%20with..."
           className="px-4 py-2 font-bold text-white bg-blue-500 rounded-lg transition duration-300 hover:bg-blue-600"
         >
           Contact Support

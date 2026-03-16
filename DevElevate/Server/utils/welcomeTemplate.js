@@ -6,7 +6,7 @@ const generateWelcomeEmail = (name) => {
       <div style="text-align: center;">
         <h2 style="color: #4f46e5; font-size: 26px; margin-bottom: 10px;">Welcome, ${name} 👋</h2>
         <p style="font-size: 16px; color: #444; line-height: 1.6;">
-          You’ve officially joined <strong>DevElevate</strong> — your all-in-one platform to boost your career, level up your coding skills, and connect with fellow developers.
+          You’ve officially joined <strong>AspirePath AI</strong> — your all-in-one platform to boost your career, level up your coding skills, and connect with fellow developers.
         </p>
       </div>
 
@@ -29,7 +29,7 @@ const generateWelcomeEmail = (name) => {
 
       <div style="margin-top: 40px; font-size: 14px; color: #555;">
         <p>If you need any help, reply to this email or contact us at 
-          <a href="mailto:officialdevelevate@gmail.com" style="color: #4f46e5; font-weight: 500;">officialdevelevate@gmail.com</a>
+          <a href="mailto:snehareddyaelijerla@gmail.com" style="color: #4f46e5; font-weight: 500;">snehareddyaelijerla@gmail.com</a>
         </p>
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;" />
         <p style="text-align: center;">

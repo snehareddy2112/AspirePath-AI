@@ -1,104 +1,6 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import {
-  Star,
-  GitFork,
-  AlertCircle,
-  Users,
-  Clock,
-  Code2,
-  ExternalLink,
-  GitPullRequest,
-  Scale,
-  Eye,
-  Languages,
-} from "lucide-react";
 
-const GITHUB_USER = "abhisek2004";
-const GITHUB_REPO = "Dev-Elevate";
-
-const TechStackAndStats: React.FC = () => {
-  const [stats, setStats] = useState({
-    stars: 0,
-    forks: 0,
-    issues: 0,
-    contributors: 0,
-    lastCommit: "N/A",
-    size: 0,
-    pullRequests: 0,
-    releases: 0,
-    license: "N/A",
-    watchers: 0,
-    languages: {},
-  });
-
-  useEffect(() => {
-    async function fetchGitHubStats() {
-      const headers = { Accept: "application/vnd.github+json" };
-      try {
-        const repoRes = await fetch(
-          `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}`,
-          { headers }
-        );
-        if (!repoRes.ok) throw new Error(`HTTP error! status: ${repoRes.status}`);
-        const repoData = await repoRes.json();
-
-        const contributorsRes = await fetch(
-          `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contributors?per_page=100`,
-          { headers }
-        );
-        if (!contributorsRes.ok)
-          throw new Error(`HTTP error! status: ${contributorsRes.status}`);
-        const contributorsData = await contributorsRes.json();
-
-        const pullsRes = await fetch(
-          `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/pulls?state=open`,
-          { headers }
-        );
-        if (!pullsRes.ok) throw new Error(`HTTP error! status: ${pullsRes.status}`);
-        const pullsData = await pullsRes.json();
-
-        const releasesRes = await fetch(
-          `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/releases`,
-          { headers }
-        );
-        if (!releasesRes.ok)
-          throw new Error(`HTTP error! status: ${releasesRes.status}`);
-        const releasesData = await releasesRes.json();
-
-        const languagesRes = await fetch(
-          `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/languages`,
-          { headers }
-        );
-        if (!languagesRes.ok)
-          throw new Error(`HTTP error! status: ${languagesRes.status}`);
-        const languagesData = await languagesRes.json();
-
-        setStats({
-          stars: repoData.stargazers_count || 0,
-          forks: repoData.forks_count || 0,
-          issues: repoData.open_issues_count || 0,
-          contributors: Array.isArray(contributorsData)
-            ? contributorsData.length
-            : 0,
-          lastCommit: repoData.pushed_at
-            ? new Date(repoData.pushed_at).toLocaleDateString("en-GB")
-            : "N/A",
-          size: repoData.size || 0,
-          pullRequests: Array.isArray(pullsData) ? pullsData.length : 0,
-          releases: Array.isArray(releasesData) ? releasesData.length : 0,
-          license: repoData.license?.spdx_id || "N/A",
-          watchers: repoData.subscribers_count || 0,
-          languages: languagesData || {},
-        });
-      } catch (err) {
-        console.error("Error fetching GitHub stats:", err);
-      }
-    }
-
-    fetchGitHubStats();
-  }, []);
-
+const TechStack: React.FC = () => {
   const technologies = [
     {
       name: "TypeScript",
@@ -144,41 +46,6 @@ const TechStackAndStats: React.FC = () => {
     { title: "Data Science", skills: ["Pandas", "Numpy", "Scikit-Learn"], color: "indigo" },
   ];
 
-  // calculate language string
-  let languageString = "N/A";
-  if (Object.keys(stats.languages).length > 0) {
-    const languageValues = Object.values(stats.languages) as number[];
-    const total = languageValues.reduce((sum, bytes) => sum + bytes, 0);
-    const sorted = (Object.entries(stats.languages) as [string, number][]).sort(
-      (a, b) => b[1] - a[1]
-    );
-    let other = 0;
-    const mainLangs: string[] = [];
-    for (const [lang, bytes] of sorted) {
-      const perc = (bytes / total) * 100;
-      if (perc < 1) other += perc;
-      else mainLangs.push(`${lang} ${perc.toFixed(1)}%`);
-    }
-    if (other > 0) mainLangs.push(`Other ${other.toFixed(1)}%`);
-    languageString = mainLangs.join(", ");
-  }
-
-  const statCards = [
-    { label: "Stars", value: stats.stars, icon: <Star className="text-yellow-500" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/stargazers` },
-    { label: "Forks", value: stats.forks, icon: <GitFork className="text-blue-500" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/network/members` },
-    { label: "Issues", value: stats.issues, icon: <AlertCircle className="text-red-500" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/issues` },
-    { label: "Pull Requests", value: stats.pullRequests, icon: <GitPullRequest className="text-pink-500" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/pulls` },
-    { label: "Contributors", value: stats.contributors, icon: <Users className="text-indigo-500" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/graphs/contributors` },
-    { label: "Watchers", value: stats.watchers, icon: <Eye className="text-cyan-500" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/watchers` },
-    { label: "License", value: stats.license, icon: <Scale className="text-gray-600 dark:text-gray-400" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/blob/main/LICENSE` },
-    { label: "Last Update", value: stats.lastCommit, icon: <Clock className="text-purple-500" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/commits` },
-    { label: "Code Size", value: `${(stats.size / 1024).toFixed(1)} MB`, icon: <Code2 className="text-green-500" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}` },
-    { label: "Languages", value: languageString, icon: <Languages className="text-amber-600" size={40} />, link: `https://github.com/${GITHUB_USER}/${GITHUB_REPO}` },
-  ];
-
-  // Duplicate for infinite effect
-  //const extendedTechnologies = [...technologies, ...technologies];
-
   return (
     <section id="learning" className="relative py-24 overflow-hidden bg-gradient-to-b from-gray-900 to-black">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -191,12 +58,11 @@ const TechStackAndStats: React.FC = () => {
             className="mb-6 text-4xl font-bold text-gray-100 md:text-5xl"
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
-              Technologies We Cover & Project Stats
+              Technologies We Cover
             </span>
           </motion.h2>
           <p className="max-w-2xl mx-auto text-xl text-gray-400">
-            Master the most in-demand technologies with our comprehensive curriculum
-            and track our open-source progress.
+            Master the most in-demand technologies with our comprehensive curriculum.
           </p>
         </div>
 
@@ -259,46 +125,6 @@ const TechStackAndStats: React.FC = () => {
           ))}
         </div>
 
-        {/* Stats */}
-        <motion.h3
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mb-10 text-3xl font-extrabold text-center text-gray-100"
-        >
-          Dev-Elevate Project Statistics
-        </motion.h3>
-
-        <motion.div
-          initial="hidden"
-          animate="show"
-          variants={{
-            show: { transition: { staggerChildren: 0.2 } },
-          }}
-          className="flex flex-wrap justify-center gap-6"
-        >
-          {statCards.map(({ label, value, icon, link }) => (
-            <motion.a
-              key={label}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-              className="relative flex flex-col items-center justify-center px-8 py-6 transition-all bg-gray-900 border border-gray-700 shadow-lg w-52 rounded-2xl hover:shadow-2xl group"
-            >
-              <div className="absolute inset-0 transition opacity-0 bg-gradient-to-r from-indigo-900/30 via-transparent to-indigo-900/30 blur-2xl group-hover:opacity-100"></div>
-              <div className="z-10 flex flex-col items-center space-y-3">
-                <div className="p-4 bg-gray-800 rounded-full">{icon}</div>
-                <p className="text-xl font-bold text-white">{value}</p>
-                <p className="text-sm text-gray-400">{label}</p>
-              </div>
-              <ExternalLink size={16} className="absolute text-gray-400 transition opacity-0 top-3 right-3 group-hover:opacity-100" />
-            </motion.a>
-          ))}
-        </motion.div>
-
         {/* CTA Section */}
         <div className="relative z-10 max-w-5xl mx-auto mt-24 text-center">
           <motion.div
@@ -314,7 +140,7 @@ const TechStackAndStats: React.FC = () => {
             <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
               Why{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">
-                DevElevate
+                AspirePath AI
               </span>
               ?
             </h2>
@@ -333,7 +159,7 @@ const TechStackAndStats: React.FC = () => {
               <span className="font-semibold">pro</span> sharpening your skills,
               <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-500">
                 {" "}
-                DevElevate empowers your growth every step of the way.
+                AspirePath AI empowers your growth every step of the way.
               </span>
             </p>
             <motion.a
@@ -356,4 +182,4 @@ const TechStackAndStats: React.FC = () => {
   );
 };
 
-export default TechStackAndStats;
+export default TechStack;

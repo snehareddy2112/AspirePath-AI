@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
                   <Code className="w-5 h-5 text-white" />
                 </div>
                 <span className={`text-xl font-bold ${state.darkMode ? "text-white" : "text-gray-900"}`}>
-                  DevElevate
+                  AspirePath AI
                 </span>
               </div>
               <p className={`text-sm mb-4 ${state.darkMode ? "text-gray-400" : "text-gray-600"}`}>
@@ -154,14 +154,14 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex flex-col items-center justify-center gap-2 pt-8 mt-12 text-center border-t sm:flex-row border-white/10">
           <div className="text-sm text-yellow-400 flex flex-wrap items-center justify-center gap-1 sm:gap-2 transition duration-300 hover:text-pink-400 hover:drop-shadow-[0_0_12px_rgba(255,20,147,0.9)]">
-            © 2025 <span className="font-semibold">DevElevate</span>. All rights reserved. | Made with ❤️ by
+            © 2025 <span className="font-semibold">AspirePath AI</span>. All rights reserved. | Made with ❤️ by
             <a
               href="https://www.linkedin.com/in/abhisekpanda2004/"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-1 font-semibold text-yellow-400 transition duration-300 hover:text-pink-400"
             >
-              Team DevElevate
+              Team AspirePath AI
             </a>
           </div>
         </div>

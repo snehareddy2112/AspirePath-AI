@@ -108,7 +108,7 @@ const CookiePolicy: React.FC = () => {
               state.darkMode ? "text-gray-300" : "text-gray-600"
             }`}
           >
-            Learn how we use cookies to enhance your experience on DevElevate
+            Learn how we use cookies to enhance your experience on AspirePath AI
             and how you can manage your preferences.
           </p>
           <div
@@ -140,7 +140,7 @@ const CookiePolicy: React.FC = () => {
               state.darkMode ? "text-gray-300" : "text-gray-700"
             }`}
           >
-            At DevElevate, we believe in being transparent about how we use
+            At AspirePath AI, we believe in being transparent about how we use
             cookies and similar technologies. This Cookie Policy explains what
             cookies are, how we use them, and how you can control them to ensure
             your privacy preferences are respected while enjoying the best

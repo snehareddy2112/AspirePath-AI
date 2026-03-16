@@ -171,10 +171,10 @@ const PrivacyPolicy: React.FC = () => {
           </p>
           <div className="space-y-2 text-gray-300">
             <p>
-              <strong>Email:</strong> officialdevelevate@gmail.com
+              <strong>Email:</strong> snehareddyaelijerla@gmail.com
             </p>
             <p>
-              <strong>Creator:</strong> Abhisek Panda
+              <strong>Creator:</strong> Sneha Reddy Aelijerla
             </p>
             <p>
               <strong>Response Time:</strong> Within 12 hours

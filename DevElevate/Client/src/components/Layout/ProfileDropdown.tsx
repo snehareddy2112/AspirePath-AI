@@ -202,7 +202,7 @@ const ProfileDropdown: React.FC<ProfileDropdownProps> = ({ isOpen, onClose }) =>
 
       {/* Footer */}
       <div className={`px-4 py-2 text-center text-xs ${state.darkMode ? 'text-gray-500 bg-gray-900' : 'text-gray-400 bg-gray-50'}`}>
-        DevElevate v1.0 • Made with ❤️
+        AspirePath AI v1.0 • Made with ❤️
       </div>
     </div>
   );

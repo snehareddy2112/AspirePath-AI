@@ -20,7 +20,7 @@ const TermsOfService: React.FC = () => {
       icon: CheckCircle,
       title: "Acceptance of Terms",
       content: [
-        "By accessing and using DevElevate, you accept and agree to be bound by these Terms of Service",
+        "By accessing and using AspirePath AI, you accept and agree to be bound by these Terms of Service",
         "These terms apply to all users, including students, educators, and career professionals",
         "If you disagree with any part of these terms, you may not access the service",
         "We reserve the right to update these terms at any time with notice to users",
@@ -48,7 +48,7 @@ const TermsOfService: React.FC = () => {
         "Respect intellectual property rights of all content creators and contributors",
         "Do not attempt to hack, disrupt, or compromise platform security",
         "Do not spam, harass, or abuse other users or our AI systems",
-        "Commercial use requires explicit written permission from DevElevate",
+        "Commercial use requires explicit written permission from AspirePath AI",
       ],
     },
     {
@@ -58,7 +58,7 @@ const TermsOfService: React.FC = () => {
         "You retain ownership of content you create and upload to the platform",
         "By uploading content, you grant us a license to use it for platform operations",
         "We respect intellectual property rights and respond to valid DMCA notices",
-        "Our AI-generated content and platform features are proprietary to DevElevate",
+        "Our AI-generated content and platform features are proprietary to AspirePath AI",
         "You may not reverse engineer, copy, or redistribute our proprietary technology",
         "Educational content is provided for personal learning and development only",
       ],
@@ -117,7 +117,7 @@ const TermsOfService: React.FC = () => {
             Terms of Service
           </h1>
           <p className="max-w-2xl mx-auto mb-2 text-lg text-gray-300">
-            Please read these terms carefully before using DevElevate. They
+            Please read these terms carefully before using AspirePath AI. They
             govern your use of our platform and services.
           </p>
           <div className="mt-2 text-sm text-gray-400">
@@ -128,13 +128,13 @@ const TermsOfService: React.FC = () => {
         {/* Introduction */}
         <div className="p-8 mb-8 border shadow-lg rounded-2xl backdrop-blur-md bg-white/10 border-gray-700/40">
           <h2 className="mb-4 text-2xl font-bold text-white">
-            Welcome to DevElevate
+            Welcome to AspirePath AI
           </h2>
           <p className="text-lg leading-relaxed text-gray-300">
-            These Terms of Service ("Terms") govern your use of DevElevate, an
+            These Terms of Service ("Terms") govern your use of AspirePath AI, an
             AI-powered education and career advancement platform. By creating an
             account or using our services, you agree to comply with these terms.
-            DevElevate helps students, developers, and professionals advance
+            AspirePath AI helps students, developers, and professionals advance
             their careers through structured learning, AI assistance, and career
             tools.
           </p>
@@ -203,15 +203,12 @@ const TermsOfService: React.FC = () => {
           </p>
           <div className="space-y-2 text-gray-300">
             <p>
-              <strong>Email:</strong> officialdevelevate@gmail.com
+              <strong>Email:</strong> snehareddyaelijerla@gmail.com
             </p>
             <p>
-              <strong>Creator:</strong> Abhisek Panda
+              <strong>Creator:</strong> Sneha Reddy Aelijerla
             </p>
-            <p>
-              <strong>GitHub:</strong>{" "}
-              https://github.com/abhisek2004/Dev-Elevate.git
-            </p>
+            
           </div>
         </div>
 

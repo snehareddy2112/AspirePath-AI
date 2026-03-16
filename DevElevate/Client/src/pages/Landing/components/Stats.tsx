@@ -34,7 +34,7 @@ const Stats: React.FC = () => {
       label: 'Placement Rate',
       suffix: '%',
       gradient: 'from-green-500 to-yellow-500'
-    }
+    } 
   ];
 
   useEffect(() => {
@@ -121,7 +121,7 @@ const Stats: React.FC = () => {
         {/* Bottom Text */}
         <div className="mt-16 text-center">
           <p className="max-w-2xl mx-auto text-xl text-gray-400">
-            ⚡ Join the DevElevate movement 💻 where developers transform into industry leaders.  💪
+            ⚡ Join the AspirePath AI movement 💻 where developers transform into industry leaders.  💪
           </p>
         </div>
       </div>

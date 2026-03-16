@@ -24,7 +24,7 @@ async function fixAdminUser() {
 
     // Find the admin user
     const adminUser = await User.findOne({ 
-      email: "officialdevelevate@gmail.com" 
+      email: "snehareddyaelijerla@gmail.com" 
     });
 
     if (!adminUser) {
@@ -37,7 +37,7 @@ async function fixAdminUser() {
         for (const admin of admins) {
           
           // If this is NOT the official admin email, change to user
-          if (admin.email !== "officialdevelevate@gmail.com") {
+          if (admin.email !== "snehareddyya@gmail.com") {
             admin.role = "user";
             await admin.save();
           }

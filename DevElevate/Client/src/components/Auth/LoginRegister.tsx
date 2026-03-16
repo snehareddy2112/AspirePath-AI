@@ -195,7 +195,7 @@ const LoginRegister: React.FC = () => {
             <UserIcon className="w-8 h-8 text-white" />
           </div>
           <h1 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-            {isLogin ? "Welcome Back!" : "Join DevElevate"}
+            {isLogin ? "Welcome Back!" : "Join AspirePath AI"}
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
             {isLogin
@@ -369,12 +369,12 @@ const LoginRegister: React.FC = () => {
                     <p className="text-sm text-center text-slate-200 font-mono">
                       Email:{" "}
                       <span className="text-amber-300">
-                        officialdevelevate@gmail.com
+                        snehareddyaelijerla@gmail.com
                       </span>
                     </p>
                     <p className="text-sm text-center text-slate-200 font-mono">
                       Password:{" "}
-                      <span className="text-amber-300">Develevate@2025</span>
+                      <span className="text-amber-300">AspirePath AI@2026</span>
                     </p>
                   </div>
                 </div>

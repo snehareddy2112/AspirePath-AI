@@ -11,7 +11,7 @@ interface SplashScreenProps {
 
 const SplashScreen: React.FC<SplashScreenProps> = ({
   fullPage = false,
-  title = "DevElevate",
+  title = "AspirePath AI",
   subtitle = "Loading your experience...",
   logoSrcLight = "/favicon.png",
   logoSrcDark = "/favicon.png",

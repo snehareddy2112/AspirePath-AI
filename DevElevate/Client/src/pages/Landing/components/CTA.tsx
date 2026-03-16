@@ -16,7 +16,7 @@ const socials = [
   {
     name: "Reddit",
     icon: <FaReddit className="w-6 h-6" />,
-    url: "https://www.reddit.com/r/DevElevate",
+    url: "https://www.reddit.com/r/AspirePath AI",
     description:
       "Join our Reddit community to share ideas, ask questions, and connect with others – free forever!",
     gradient: "from-orange-500 via-orange-600 to-orange-700",
@@ -26,7 +26,7 @@ const socials = [
     icon: <FaDiscord className="w-6 h-6" />,
     url: "https://discord.gg/KwVy6twN",
     description:
-      "Join our Discord server to connect with the DevElevate community",
+      "Join our Discord server to connect with the AspirePath AI community",
     gradient: "from-indigo-500 via-purple-600 to-purple-700",
   },
   {
@@ -34,7 +34,7 @@ const socials = [
     icon: <FaLinkedin className="w-6 h-6" />,
     url: "https://www.linkedin.com/in/abhisekpanda2004/",
     description:
-      "Connect with Abhisek Panda professionally and expand your network with DevElevate",
+      "Connect with Abhisek Panda professionally and expand your network with AspirePath AI",
     gradient: "from-blue-700 via-blue-800 to-blue-900",
   },
 ];
@@ -119,7 +119,7 @@ const CommunityAndCTA = () => {
   return (
     <>
       {/* ---------- Tailwind blob animation (add to globals.css or <style> tag) ---------- */}
-      <style jsx>{`
+      <style>{`
         @keyframes blob {
           0%, 100% { transform: translate(0, 0) rotate(0deg); }
           25%      { transform: translate(30px, -30px) rotate(5deg); }
@@ -152,7 +152,7 @@ const CommunityAndCTA = () => {
           >
             <span className="block mb-2">Connect, collaborate, and</span>
             <span className="block leading-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-blue-400">
-              grow with DevElevate.
+              grow with AspirePath AI.
             </span>
           </motion.h2>
 
@@ -163,7 +163,7 @@ const CommunityAndCTA = () => {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             className="max-w-2xl mx-auto mb-12 text-lg text-gray-400"
           >
-            Join our community of developers, share best practices, and get support for your learning journey with DevElevate.
+            Join our community of developers, share best practices, and get support for your learning journey with AspirePath AI.
           </motion.p>
 
           {/* Social Cards */}
@@ -279,7 +279,7 @@ const CommunityAndCTA = () => {
               Ready to transform your tech career?
             </h3>
             <p className="max-w-2xl mx-auto mb-8 text-lg text-gray-300">
-              Join 100+ developers who are already learning, growing, and landing their dream jobs with DevElevate's AI-powered platform.
+              Join 100+ developers who are already learning, growing, and landing their dream jobs with AspirePath AI's AI-powered platform.
             </p>
 
             <div className="flex flex-col justify-center gap-4 mb-8 sm:flex-row">
@@ -291,7 +291,7 @@ const CommunityAndCTA = () => {
               </Link>
 
               <a
-                href="mailto:officialdevelevate@gmail.com?subject=Book%20a%20Demo"
+                href="mailto:snehareddyaelijerla@gmail.com?subject=Book%20a%20Demo"
                 className="px-10 py-4 font-semibold text-white transition-all duration-300 border border-white/20 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/10"
               >
                 Book a Demo

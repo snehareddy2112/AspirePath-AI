@@ -18,7 +18,7 @@ export const authenticateToken = async (req, res, next) => {
     // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-    // ✅ Extract user ID from ANY possible field in token
+    // Extract user ID from token
     const userId = decoded.userId || decoded.id || decoded._id;
 
     if (!userId) {
@@ -28,22 +28,28 @@ export const authenticateToken = async (req, res, next) => {
       });
     }
 
-    // ✅ Get FULL user data from database
-    const user = await User.findById(userId).select("-password").lean();
+    // 🔥 FIND USER
+    let user = await User.findById(userId).select("-password");
 
+    // 🔥 AUTO-CREATE USER IF NOT FOUND (Firebase / Google users)
     if (!user) {
-      return res.status(401).json({
-        success: false,
-        message: "User not found - Invalid token",
+      user = await User.create({
+        _id: userId,
+        name: decoded.name || "User",
+        email: decoded.email,
+        role: "user",
+        isVerified: true,
+        provider: "firebase", // optional but useful
       });
     }
 
-    // ✅ Attach user object with BOTH _id and id fields to request
+    // Attach user to request
     req.user = {
-      ...user,
+      ...user.toObject(),
       _id: user._id,
       id: user._id.toString(),
     };
+
     next();
   } catch (error) {
     console.error("❌ Auth middleware error:", error.message);

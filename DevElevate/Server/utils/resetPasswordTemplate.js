@@ -29,7 +29,7 @@ const generateResetPasswordEmail = (name, resetPasswordUrl) => {
         </div>
         
         <div style="text-align: center; margin-top: 20px; color: #6c757d; font-size: 12px;">
-          <p>© 2025 Dev Elevate. All rights reserved.</p>
+          <p>© 2025 AspirePath AI. All rights reserved.</p>
         </div>
       </body>
       </html>

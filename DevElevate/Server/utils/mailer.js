@@ -16,9 +16,9 @@ const transporter = nodemailer.createTransport({
 
 const sendWelcomeEmail = async (to, htmlContent) => {
   const mailOptions = {
-    from: `"DevElevate Team" <${process.env.MAIL_USER}>`,
+    from: `"Team AspirePath AI" <${process.env.MAIL_USER}>`,
     to,
-    subject: "🎉 Welcome to DevElevate!",
+    subject: "🎉 Welcome to  AspirePath AI!",
     html: htmlContent,
   };
 
@@ -33,7 +33,7 @@ const sendWelcomeEmail = async (to, htmlContent) => {
 
 export const sendResetPasswordEmail = async (to, htmlContent) => {
   const mailOptions = {
-    from: `"DevElevate Team" <${process.env.MAIL_USER}>`,
+    from: `"Team AspirePath AI" <${process.env.MAIL_USER}>`,
     to,
     subject: "🔐 Reset Password",
     html: htmlContent,
@@ -50,9 +50,9 @@ export const sendResetPasswordEmail = async (to, htmlContent) => {
 
 export const sendOtpEmail = async (to, otp, minutes = 5) => {
   const mailOptions = {
-    from: `"DevElevate Team" <${process.env.MAIL_USER}>`,
+    from: `"AspirePath AI Team" <${process.env.MAIL_USER}>`,
     to,
-    subject: "🔐 Email Verification DevElevate",
+    subject: "🔐 Email Verification AspirePath AI",
     html: `<!DOCTYPE html>
       <html>
       <head>
@@ -89,7 +89,7 @@ export const sendOtpEmail = async (to, otp, minutes = 5) => {
         </div>
         
         <div style="text-align: center; margin-top: 20px; color: #6c757d; font-size: 12px;">
-          <p>© 2025 Dev Elevate. All rights reserved.</p>
+          <p>© 2025 AspirePath AI. All rights reserved.</p>
         </div>
       </body>
       </html>

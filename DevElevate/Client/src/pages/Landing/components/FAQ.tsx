@@ -17,12 +17,12 @@ const FAQ: React.FC = () => {
   });
   const faqs = [
     {
-      question: "What is DevElevate?",
+      question: "What is AspirePath AI?",
       answer:
-        "DevElevate is your all-in-one platform for learning, coding practice, interview prep, resume building, tech news, and community support.",
+        "AspirePath AI is your all-in-one platform for learning, coding practice, interview prep, resume building, tech news, and community support.",
     },
     {
-      question: "Is DevElevate free to use?",
+      question: "Is AspirePath AI free to use?",
       answer:
         "Core features are free. Premium features like AI-powered tools and advanced templates may require a subscription.",
     },
@@ -97,7 +97,7 @@ const FAQ: React.FC = () => {
           Frequently Asked Questions
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-gray-300">
-          Find answers to common questions about DevElevate
+          Find answers to common questions about AspirePath AI
         </p>
 
         <div className="grid gap-4 mt-10 md:grid-cols-2">

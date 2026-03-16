@@ -40,7 +40,7 @@ const Header: React.FC = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                DevElevate
+                AspirePath AI
               </h1>
               <p className="text-xs text-gray-400">Smart Learning Hub</p>
             </div>

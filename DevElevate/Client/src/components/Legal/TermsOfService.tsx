@@ -312,14 +312,14 @@ const TermsOfService: React.FC = () => {
                 state.darkMode ? "text-gray-300" : "text-gray-700"
               }`}
             >
-              <strong>Email:</strong> officialdevelevate@gmail.com
+              <strong>Email:</strong> snehareddyaelijerla@gmail.com
             </p>
             <p
               className={`${
                 state.darkMode ? "text-gray-300" : "text-gray-700"
               }`}
             >
-              <strong>Creator:</strong> Abhisek Panda
+              <strong>Creator:</strong> Sneha 
             </p>
             <p
               className={`${
